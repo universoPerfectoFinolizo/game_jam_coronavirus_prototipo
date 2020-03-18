@@ -12,6 +12,15 @@ public class controlador_cabina : MonoBehaviour
 
     public GameObject auto;
 
+    public GameObject contr_moneda;
+    controlador_monedas contr_monedas_script;
+
+    private void Start()
+    {
+        contr_moneda = GameObject.FindGameObjectWithTag("controlador_moneda");
+        contr_monedas_script = contr_moneda.GetComponent<controlador_monedas>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "auto_infectado" || collision.tag=="auto_normal")
@@ -31,11 +40,19 @@ public class controlador_cabina : MonoBehaviour
     {
         if (des == true)
         {
+            if(auto.tag== "auto_normal")
+            {
+                contr_monedas_script.sumar_punto(2);
+            }
             barrera_obj.SetActive(false);
             StartCoroutine(barrera());
         }
         else if (des == false)
         {
+            if (auto.tag == "auto_normal")
+            {
+                contr_monedas_script.restar_punto(1);
+            }
             auto.SetActive(false);
         }
         panel.SetActive(false);

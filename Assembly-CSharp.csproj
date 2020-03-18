@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\camara.cs" />
     <Compile Include="Assets\controlador_cabina.cs" />
+    <Compile Include="Assets\controlador_monedas.cs" />
     <Compile Include="Assets\detector_adelante.cs" />
     <Compile Include="Assets\enemigo1.cs" />
     <Compile Include="Assets\generador.cs" />

@@ -7,6 +7,7 @@ TagManager:
   - auto_normal
   - auto_infectado
   - barrera
+  - controlador_moneda
   layers:
   - Default
   - TransparentFX
