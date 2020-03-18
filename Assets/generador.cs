@@ -23,46 +23,86 @@ public class generador : MonoBehaviour
     //datos variados:
     int tiempo_oleada_n;
 
+    public bool ocupado_b = false;
+    public bool ocupado = false;
+
     private void Start()
     {
-        generar();
+        StartCoroutine(generar());
     }
 
-    private void generar()
+    private void Update()
+    {
+        
+    }
+
+    IEnumerator generar()
     {
         while (nivel_orda <= 100)
         {
-                //tiempo oleada:
-                if (tiempo_oleada_n < tiempos_oleadas[nivel_orda-1])
+            if (ocupado == false)
+            {
+                if (tiempo_oleada_n < tiempos_oleadas[nivel_orda - 1])
                 {
-                    StartCoroutine(esperarTiempo(tiempo_generar));
+                    yield return new WaitForSeconds(tiempo_generar);
                     int r1 = Random.Range(0, 10);
                     print(r1);
-
-                    switch (r1)
+                    if (ocupado == false)
                     {
-                        case 0:
-                            GameObject persona1 = GameObject.Instantiate(persona, transform.position, transform.rotation) as GameObject;
-                            break;
-                        default:
-                            GameObject enemigo1_1 = GameObject.Instantiate(enemigo1, transform.position, transform.rotation) as GameObject;
-                            break;
+                        switch (r1)
+                        {
+                            case 0:
+                                GameObject persona1 = GameObject.Instantiate(persona, transform.position, transform.rotation) as GameObject;
+                                break;
+                            default:
+                                GameObject enemigo1_1 = GameObject.Instantiate(enemigo1, transform.position, transform.rotation) as GameObject;
+                                break;
+                        }
+                        tiempo_oleada_n++;
                     }
-                    tiempo_oleada_n++;
                 }
                 else
                 {
-                    StartCoroutine(esperarTiempo(tiempo_descanso));
+                    yield return new WaitForSeconds(tiempo_descanso);
+                    nivel_orda++;
+                    tiempo_oleada_n = 0;
                 }
+            }
+            else
+            {
+                yield return new WaitForSeconds(1f);
+            }
+            
         }
     }
-        
-    
 
-    private IEnumerator esperarTiempo (float tiempo){
-        yield return new WaitForSeconds(tiempo);
-        nivel_orda++;
-        tiempo_oleada_n = 0;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag=="auto_infectado" || collision.tag == "auto_normal")
+        {
+            ocupado_b = true;
+            StartCoroutine(ocupado_f());
+        }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "auto_infectado" || collision.tag == "auto_normal")
+        {
+            ocupado_b = false;
+            ocupado = false;
+        }
+    }
+
+    IEnumerator ocupado_f()
+    {
+        yield return new WaitForSeconds(2);
+        if (ocupado_b == true)
+        {
+            ocupado = true;
+        }
+    }
+
+    //261 30
 
 }

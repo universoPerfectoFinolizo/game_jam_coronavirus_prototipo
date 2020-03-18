@@ -110,10 +110,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 636
-  m_MinSize: {x: 915, y: 272}
-  m_MaxSize: {x: 22010, y: 10022}
+  m_MinSize: {x: 917, y: 272}
+  m_MaxSize: {x: 22012, y: 10022}
   vertical: 1
-  controlID: 16185
+  controlID: 6750
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 636
-  m_MinSize: {x: 915, y: 272}
-  m_MaxSize: {x: 22010, y: 10022}
+  m_MinSize: {x: 917, y: 272}
+  m_MaxSize: {x: 22012, y: 10022}
   vertical: 0
-  controlID: 16186
+  controlID: 6751
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,7 +194,7 @@ MonoBehaviour:
   - {fileID: 11}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 302
     height: 636
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -373,14 +373,14 @@ MonoBehaviour:
   m_StartGridSize: 96
   m_LastFolders: []
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: C:\Users\gael\Desktop\programacion\C#\unity\prototipo_game_jam
+  m_LastProjectPath: C:\Users\gael\Documents\GitHub\game_jam_coronavirus_prototipo
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c20b0000
     m_LastClickedID: 3010
-    m_ExpandedIDs: ffffffff00000000422d00000a2e000022360000
+    m_ExpandedIDs: ffffffff00000000a82d0000f02e0000102f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -408,7 +408,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000422d00000a2e000022360000
+    m_ExpandedIDs: ffffffff00000000a82d0000f02e0000102f00005e5d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -500,9 +500,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.4680026, y: 1.758588, z: -441.4289}
+    m_Target: {x: 0.9254909, y: 0.14290777, z: -1.4365234}
     speed: 2
-    m_Value: {x: 2.4597971, y: 1.7452542, z: -441.41412}
+    m_Value: {x: 0.9254909, y: 0.14290777, z: -1.4365234}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -535,9 +535,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.435159
+    m_Target: 7.636253
     speed: 2
-    m_Value: 3.2872334
+    m_Value: 7.307419
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -656,23 +656,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6892ffff
-      m_LastClickedID: -28056
-      m_ExpandedIDs: 5e92ffff02afffff6cafffff64b7ffff04e5ffff2ae8ffff70fbffffb4310000d8310000
+      m_SelectedIDs: 3c350000
+      m_LastClickedID: 13628
+      m_ExpandedIDs: 88bffffff8dbffff04fbffff70fbffffc6340000f43400002a350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: adelante
-        m_OriginalName: adelante
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -23272
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 

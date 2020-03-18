@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 817, y: 272}
   m_MaxSize: {x: 22012, y: 10022}
   vertical: 1
-  controlID: 11343
+  controlID: 6384
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -54,17 +54,17 @@ MonoBehaviour:
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -512
-    m_HBaseRangeMax: 512
-    m_VBaseRangeMin: -384
-    m_VBaseRangeMax: 384
+    m_HBaseRangeMin: -313
+    m_HBaseRangeMax: 313
+    m_VBaseRangeMin: -176
+    m_VBaseRangeMax: 176
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
       y: 17
       width: 626
       height: 600
-    m_Scale: {x: 0.6113281, y: 0.6113281}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 313, y: 300}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -92,12 +92,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -512
-      y: -490.73483
-      width: 1024
-      height: 981.46967
+      x: -313
+      y: -300
+      width: 626
+      height: 600
     m_MinimalGUI: 1
-  m_defaultScale: 0.6113281
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 626, y: 617}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 817, y: 272}
   m_MaxSize: {x: 22012, y: 10022}
   vertical: 0
-  controlID: 11344
+  controlID: 6385
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,14 +202,14 @@ MonoBehaviour:
   m_StartGridSize: 96
   m_LastFolders: []
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: C:\Users\gael\Desktop\programacion\C#\unity\prototipo_game_jam
+  m_LastProjectPath: C:\Users\gael\Documents\GitHub\game_jam_coronavirus_prototipo
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c20b0000
     m_LastClickedID: 3010
-    m_ExpandedIDs: ffffffff00000000422d00000a2e00002c360000343600006e3600007e360000
+    m_ExpandedIDs: ffffffff00000000a82d0000f02e0000102f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -235,9 +235,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6cafffff
+    m_SelectedIDs: f8dbffff
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000422d00000a2e000022360000
+    m_ExpandedIDs: ffffffff00000000a82d0000f02e0000102f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -262,8 +262,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6cafffff
-    m_LastClickedInstanceID: -20628
+    m_SelectedInstanceIDs: f8dbffff
+    m_LastClickedInstanceID: -9224
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
@@ -317,9 +317,9 @@ MonoBehaviour:
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 7}
-  - {fileID: 2}
   - {fileID: 8}
-  m_Selected: 1
+  - {fileID: 2}
+  m_Selected: 2
   m_LastSelected: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -357,9 +357,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.956269, y: 1.3977323, z: -5.4076543}
+    m_Target: {x: 345.81503, y: 194.68196, z: -14.285187}
     speed: 2
-    m_Value: {x: 3.956269, y: 1.3977323, z: -5.4076543}
+    m_Value: {x: 345.81503, y: 194.68196, z: -14.285187}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -392,9 +392,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.4398165
+    m_Target: 689.92236
     speed: 2
-    m_Value: 2.4398165
+    m_Value: 689.92236
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -413,7 +413,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.019979551, y: 0.02508781, z: 0.00034878083, w: 0.9994895}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -541,7 +541,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 04e5ffff2ae8ffff70fbffffb4310000d8310000
+      m_ExpandedIDs: 4adcffff70fbfffff43400002a350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -628,7 +628,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -20628
+  m_LastInspectedObjectInstanceID: -9224
   m_LastVerticalScrollValue: 0
 --- !u!114 &13
 MonoBehaviour:

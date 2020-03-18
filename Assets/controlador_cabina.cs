@@ -8,16 +8,16 @@ public class controlador_cabina : MonoBehaviour
     public float tiempo_barrera;
     public GameObject barrera_obj;
 
+    public GameObject panel;
+
+    public GameObject auto;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag== "auto_infectado")
+        if (collision.tag == "auto_infectado" || collision.tag=="auto_normal")
         {
-            collision.gameObject.SetActive(false);
-        }
-        else if (collision.tag == "auto_normal")
-        {
-            barrera_obj.SetActive(false);
-            StartCoroutine(barrera());
+            auto = collision.gameObject;
+            panel.SetActive(true);
         }
     }
 
@@ -25,6 +25,20 @@ public class controlador_cabina : MonoBehaviour
     {
         yield return new WaitForSeconds(tiempo_barrera);
         barrera_obj.SetActive(true);
+    }
+
+    public void desicion(bool des)
+    {
+        if (des == true)
+        {
+            barrera_obj.SetActive(false);
+            StartCoroutine(barrera());
+        }
+        else if (des == false)
+        {
+            auto.SetActive(false);
+        }
+        panel.SetActive(false);
     }
 
 }
